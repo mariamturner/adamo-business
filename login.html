@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="{{LANGUAGE_CODE }}">
+<head>
+  <title>Adamo</title>
+
+  <!-- Meta Tags Required for char set & screensizes -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <!-- Edit the following three in the future tags -->
+  <meta name="description" content="With Thilki effortlessly represent yourself in the web with projects, experiences or any other information that define you! Join free today and start adding content.">
+  <meta name="keywords" content="Thilki, Web presence, personal, dynamic, deploy, identity, professional identity, website">
+  <meta name="author" content="Venerist ©">
+
+
+  <!-- Import Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+
+  <!-- Font Awesome Import -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+  <!-- Import Google Things -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Poppins:300,400,700" rel="stylesheet">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="86189261481-enl7ledts5r14quruelmtfapl2g1c0be.apps.googleusercontent.com.apps.googleusercontent.com">
+
+
+  <!-- Import Custom CSS -->
+  <link href="css/index.css" rel="stylesheet">
+
+  <!-- Import Custom JS -->
+  <script src="{% static 'js/portfolio.js' %}"></script>
+  <script src="{% static 'js/auth.js' %}"></script>
+
+  <!-- Import JQuery Forms -->
+  <script src="https://c.vnr.is/jfrm.js"></script>
+
+  <!-- Import File specific-->
+
+  <!--End of Import Tags-->
+</head>
+
+<body>
+    <div class="banner-container full-height">
+      <div class="left thilki-blue text-white align-items-center justify-content-end">
+        <div class="text-right p-4 limit-max-width-100">
+          <h3>Welcome To Adamo</h3>
+          <h3><small><i>Get ready to explore</i></small></h3>
+          <p>Find out the best events</p>
+          <p>Connect with friends</p>
+          <p>Discover new experiences</p>
+          <img class="my-4 margin-50right" style="opacity: .2;" src="img/homePic.png">
+          <h6>Already a member? <a href="login.html" class="thilki-orange-alt-text">Login Now!</a></h6>
+          <h6><a href="about.html" class="thilki-orange-alt-text">About</a></h6>
+        </div>
+      </div>
+      <div class="right align-items-center justify-content-start">
+        <div class="container-fluid p-4">
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <h4 class="mb-4">Join Today</h4>
+              <form id="loginForm" class="my-2 my-lg-0" action="{% url 'login' %}" method="post" role="form">
+                <input type="email" class="form-control my-2" id="email" aria-describedby="emailHelp" placeholder="Email">
+                <input type="email" class="form-control my-2" id="email" aria-describedby="emailHelp" placeholder="Username">
+                <input type="password" class="form-control my-2" id="password" aria-describedby="emailHelp" placeholder="Password">
+                <input type="password" class="form-control my-2" id="password" aria-describedby="emailHelp" placeholder="Confirm Password">
+
+                <hr class="mt-0 thilki-orange-alt-border">
+                <div class="d-flex justify-content-start align-items-center">
+                  <button type="submit" class="mr-3 btn thilki-white thilki-blue-alt-border thilki-blue-alt-text">Register</button> 
+                   or 
+                  <button type="submit" class="ml-3 btn thilki-white thilki-blue-alt-border thilki-blue-alt-text">G Sign In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
